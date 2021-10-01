@@ -96,6 +96,10 @@ footer {
   .burger {
     display: block;
   }
+
+  footer {
+    display: flex;
+  }
 }
 
 .nav-active {
@@ -180,7 +184,32 @@ div#slider figure {
   
 }
 
+.logosreseau {
+  display: flex;
+}
+
 footer {
   display: flex;
-  margin-top: 23rem
+  justify-content: space-between;
+  align-items: center;
+}
+
+#instagram {
+  margin-left: 27rem;
+  width: 25px;
+}
+
+#facebook {
+  margin-left: 5rem;
+  width: 25px;
+}
+
+#tweeter {
+  margin-left: 5rem;
+  width: 25px;
+}
+
+.mentions {
+  display: flex;
+  width: 200px;
 }
