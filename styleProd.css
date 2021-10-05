@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .logo img {
+    width: 250px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 12vh;
+    font-family: "Arial", sans-serif;
+    background-color: #dbd4c7;
+  }
+  
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 30vh;
+    top: 8vh;
+    background-color: #dbd4c7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+  }
+  
+  .nav-links li {
+    list-style: none;
+  }
+  
+  .nav-links a {
+    color: #4a3008;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 14px;
+  } 
+  
+
+  
+  .burger {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #4a3008;
+    margin: 5px;
+    transition: all 0.3s ease;
+    z-index: 2;
+  }
+  
+  ul {
+    z-index: 2;
+  }
+
+  h1 {
+    text-shadow: 0.1em 0.1em #333;
+    border: 10px ridge rgb(100, 44, 17);
+   color: rgb(255, 255, 255);
+   display: flex;
+   justify-content: center;
+   margin-top: 50px;
+   font-size: 50px
+  }
+  body {
+      
+    background-size:cover;
+    background-image:url(images/imgProdPc.jpeg); 
+  }
+  
+  .producteurs {
+      margin-top: 2rem;
+      display: flex;
+  }
+
+.prod1{
+    background-color: green;
+    border: 10px ridge rgb(100, 44, 17);
+    padding: 5px;
+} 
+
+.prod2{
+    background-color: green;
+    border: 10px ridge rgb(100, 44, 17);
+    padding: 5px;    
+} 
+.prod3{
+    background-color: green;
+    border: 10px ridge rgb(100, 44, 17);; 
+padding: 5px;
+} 
+.prod4{
+    background-color: green;
+    border: 10px ridge rgb(100, 44, 17); 
+padding: 5px;
+} 
+.prod5{
+    background-color: green;
+    border: 10px ridge rgb(100, 44, 17); 
+padding: 5px;
+} 
+.prod6{
+    background-color: green;
+    border: 10px ridge rgb(100, 44, 17); 
+padding: 5px;
+} 
+
+
+  
+  footer {
+    background-color: #dbd4c7;
+    min-height: 12vh;
+        position:absolute;
+        bottom:0;  /* on le colle en bas */
+        width:100%;
+     }
+  
+  
+  @media screen and (max-width: 586px) {
+    body {
+      overflow-x: hidden;
+    }
+  
+    .logo img {
+      width: 110px;
+    }
+  
+    nav {
+      min-height: 12vh;
+    }
+  
+    ul {
+      z-index: 2;
+    }
+  
+    .burger div {
+      z-index: 2;
+    }
+  
+    .nav-links li {
+      opacity: 0;
+    }
+  
+    .burger {
+      display: block;
+    }
+  
+    footer {
+      display: flex;
+    }
+  }
+  
+  .nav-active {
+    transform: translateX(0%);
+  }
+  
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  
+  .toggle .line2 {
+    opacity: 0;
+  }
+  
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  
+  
+  
+  .logosreseau {
+    display: flex;
+  }
+  
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #instagram {
+    width: 25px;
+  }
+  
+  #facebook {
+    margin-left: 5rem;
+    width: 25px;
+  }
+  
+  #tweeter {
+    margin-left: 5rem;
+    width: 25px;
+  }
+  
+  .mentions {
+    width: 200px;
+}
+
+  
