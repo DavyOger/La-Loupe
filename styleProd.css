@@ -75,7 +75,7 @@
    font-size: 50px
   }
   body {
-      
+
     background-size:cover;
     background-image:url(images/imgProdPc.jpeg); 
   }
@@ -90,11 +90,9 @@
     border: 10px ridge rgb(100, 44, 17);
     padding: 5px;
 } 
-
 .prod2{
     background-color: green;
     border: 10px ridge rgb(100, 44, 17);
-    padding: 5px;    
 } 
 .prod3{
     background-color: green;
