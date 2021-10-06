@@ -1,0 +1,276 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #FFFDF6;
+  }
+  
+  .logo img {
+    width: 220px;
+    margin-left: 15vw;
+  }
+
+nav {
+    align-items: center;
+    min-height: 12vh;
+    font-family: "Arial", sans-serif;
+    background-color: #DBD4C7;
+    display: grid;
+    grid-template-columns: 50vw 25vw 50vw;
+    overflow:hidden;
+  }
+  
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 30vh;
+    top: 10vh;
+    background-color: #dbd4c7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    justify-content: space-around;
+    width: 25vw;
+    overflow: hidden;
+  }
+  
+  .nav-links li {
+    list-style: none;
+  }
+  
+  .nav-links a {
+    color: #4a3008;
+    text-decoration: none;
+    letter-spacing: 0.1vw;
+    font-size: 2vh;
+  }
+  
+  .burger {
+
+    cursor: pointer;
+    margin-left: 130%;
+  }
+  
+  .burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #4a3008;
+    margin: 5px;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+  }
+  
+  hr {
+    border: none;
+    border-top: 0.2vh solid #4a3008;
+    color: #4a3008;
+    overflow: visible;
+    text-align: center;
+    width: 13vw;
+  }
+  
+  ul {
+    z-index: 2;
+  }
+  
+  .nav-active {
+    transform: translateX(0%);
+  }
+  
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 4px);
+  }
+  
+  .toggle .line2 {
+    opacity: 0;
+  }
+  
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -5px);
+  }
+  
+
+h2 {
+    letter-spacing: 2px;
+    padding: 50px;
+}
+
+form {
+    padding: 0 50px;
+}
+
+input {
+    width: 70vh;
+    padding: 12px;
+}
+
+button {
+    padding: 14px 30px;
+    cursor: pointer;
+    background: #4A3008;
+    color: white;
+    border-radius: 50px;
+    font-size: 15px;
+}
+
+fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+}
+
+textarea {
+    width: 70vh;
+    padding: 10px;
+    height: 200px;
+}
+
+iframe {
+    padding: 0 50px;
+}
+
+footer {
+    background-color: #dbd4c7;
+    min-height: 12vh;
+    margin-top: 4rem;
+    bottom:0;  /* on le colle en bas */
+    width:100%;
+     }
+  
+
+@media screen and (min-width:1024px){
+    .contact {
+        display: flex;
+    }
+
+    form {
+        padding-right: 0;
+    }
+
+    iframe {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1024px){
+    input {
+        width: 100%;
+    }
+
+    textarea {
+        width: 100%;
+    }
+
+    iframe {
+        padding-top: 40px;
+        width: 100%;
+    }
+}
+
+.mairie {
+    padding: 0 50px;
+}
+
+
+
+@media screen and (max-width:586px){
+    
+    body {
+        overflow-x: hidden;
+    }
+
+    nav {
+        min-height: 9vh;
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+    .burger {
+        display: block;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    textarea {
+        width: 100%;
+        padding: 10px;
+        height: 200px;
+    }
+}
+
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line2{
+    opacity: 0;
+}
+
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+.logosreseau {
+    grid-column: 2;
+    display: flex;
+  }
+  
+  footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+  }
+  
+  #instagram {
+      margin-left: 15rem;
+    width: 25px;
+  }
+  
+  #facebook {
+    margin-left: 5rem;
+    width: 25px;
+  }
+  
+  #tweeter {
+    margin-left: 5rem;
+    width: 25px;
+  }
+  
+  .mentions {
+    grid-column: 5;
+    width: 200px;
+}
