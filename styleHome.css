@@ -418,24 +418,35 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
+    background-color: #dbd4c7;
+    min-height: 12vh;
+    margin-top: 6rem;
+    bottom: 0; /* on le colle en bas */
+    /* width: 100%; */
   }
   
+  .logosreseau {
+    width: auto;
+    grid-column: 2;
+    display: flex;
+  }
   #instagram {
-      margin-left: 15rem;
-    width: 25px;
+  
+    margin-left: 48%;
+    /* width: 25px; */
   }
   
   #facebook {
-    margin-left: 5rem;
-    width: 25px;
+    margin-left: 4%;
+    /* width: 25px; */
   }
   
   #tweeter {
-    margin-left: 5rem;
-    width: 25px;
+    margin-left: 5%;
+    /* width: 25px; */
   }
   
   .mentions {
     grid-column: 5;
     width: 200px;
-}
+  }
