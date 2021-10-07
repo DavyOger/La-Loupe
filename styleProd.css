@@ -1,10 +1,11 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   color: #4a3008;
   font-family: "Arial", sans-serif;
-}
+} */
+
 body {
   background-color: #fffdf6;
   overflow-x: hidden;
@@ -46,7 +47,7 @@ nav {
   transform: translateX(100%);
   transition: transform 0.5s ease-in;
   justify-content: space-around;
-  width: 25vw;
+  width: 20vw;
   overflow: hidden;
 }
 
@@ -63,7 +64,7 @@ nav {
 
 .burger {
   cursor: pointer;
-  margin-left: 130%;
+  margin-left: 38vw;
 }
 
 .burger div {
@@ -235,4 +236,79 @@ footer {
 .mentions {
   grid-column: 5;
   width: 200px;
+}
+
+@media screen and (max-width: 1024px) {
+
+  .logo img {
+    width: 200px;
+    margin-left: 35%;
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+
+  .nav-links {
+    top: 9%;
+    margin: 0;
+  }
+
+  .nav-links a {
+    font-size: 0.8rem;
+  }
+
+  .burger {
+    margin-left: 30vw;
+  }
+
+  hr {
+    border-top: 0.2vh solid #4a3008;
+    width: 20vw;
+  }
+}
+
+@media screen and (max-width: 586px) {
+
+  .logo img {
+    width: 180px;
+    margin-left: 35%;
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+
+  .nav-links {
+    width: 30vw;
+    top: 10%;
+    margin: 0;;
+  }
+
+  hr {
+    border-top: 0.2vh solid #4a3008;
+    width: 20vw;
+  }
+
+  footer {
+    min-height: 13vh;
+    margin-top: 0%;
+  }
+
+  #instagram {
+    margin-left: 5%;
+  }
+  
+  #facebook {
+    margin-left: 10%;
+  }
+  
+  #tweeter {
+    margin-left: 10%;
+  }
+  
+  .mentions {
+    grid-column: 5;
+    width: 7rem;
+  }
 }
