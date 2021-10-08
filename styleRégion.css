@@ -1,11 +1,12 @@
-* {
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  color: #4a3008
-}
-ul {
-  z-index: 2;
+  overflow-x: hidden;
+  background-color: #fffdf6;
+  background-color: rgb(199, 240, 205);
+  text-align: justify;
+  font-size: 20px;
+
 }
 
 .logo img {
@@ -52,7 +53,7 @@ nav {
 
 .burger {
   cursor: pointer;
-  margin-left: 130%;
+  margin-left: 160%;
 }
 
 .burger div {
@@ -104,7 +105,6 @@ ul {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
-body {
   background-color: rgb(199, 240, 205);
     text-align: justify;
     font-size: 20px ;
