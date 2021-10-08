@@ -109,35 +109,31 @@ body {
     text-align: justify;
     font-size: 20px ;
 }
+
 h4 {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-h3 {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-h1 {
   margin-right: 34rem;
     margin-top: 3rem;
     margin-bottom: 2rem;
-    color: black;
     text-align: center;
     font-size: 1.5em;
   }
+
   .description {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
   }
+
   .description h1 {
     width: 100%;
   }
+
   .description .container1 {
     margin-top: 3rem;
     flex-direction: column;
     width: 70%;
   }
+  
   .description .image {
     display: inline-block;
     width: 25%;
